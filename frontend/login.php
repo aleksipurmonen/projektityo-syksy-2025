@@ -28,6 +28,9 @@
     <br>
     <label>Salasana</label>
     <input type="password" name="salasana" id="salasana" placeholder="Salasana" required>
+    <input type="checkbox" onclick="togglePasswordVisibility(false)">Näytä salasana
+    <input type="checkbox" name="remember_me" id="remember_me">
+    <p>Muista minut</p>
     <a href="register.php">
         <P>Rekisteröidy</P>
     </a>
