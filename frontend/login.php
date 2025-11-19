@@ -74,7 +74,8 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
 <?php if (isset($_SESSION['success_message'])): ?>
     <div class="alert alert-success"><?php echo "✅ " . htmlspecialchars($_SESSION['success_message']); unset($_SESSION['success_message']); ?></div>
 <?php endif; ?>
-    <h4>Kirjaudu</h4>
+    <h3>Kirjaudu</h3>
+    <br>
     <label>Sähköposti</label>
     <input type="email" name="gmail" id="gmail" placeholder="nimi@example.com" required>
     <br>

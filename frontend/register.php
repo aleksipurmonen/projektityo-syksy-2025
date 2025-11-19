@@ -22,7 +22,8 @@
     <?php if (!empty($error)): ?>
         <div class="alert alert-danger"><?php echo $error; ?></div>
     <?php endif; ?>
-    <h4>Rekisteröityminen</h4>
+    <h3>Rekisteröityminen</h3>
+    <br>
     <label>Nimi</label>
     <input type="text" name="nimi" id="nimi" placeholder="Etunimi Sukunimi" required>
     <br>
