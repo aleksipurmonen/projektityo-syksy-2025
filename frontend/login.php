@@ -77,7 +77,7 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
 <?php if (isset($_SESSION['success_message'])): ?>
     <div class="alert alert-success"><?php echo "✅ " . htmlspecialchars($_SESSION['success_message']); unset($_SESSION['success_message']); ?></div>
 <?php endif; ?>
-    <a href="index.php">← Takaisin etusivulle</a>
+    
     <h2>Kirjaudu sisään</h2>
     <br>
     <label>Sähköposti</label>
@@ -93,8 +93,9 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
 
     <a href="register.php" class="register-link">Rekisteröidy</a>
 </div>
-
 <button type="submit">Kirjaudu</button>
+<br><br>
+<a href="index.php">← Takaisin etusivulle</a>
 </form>
 </div>
 </body>
