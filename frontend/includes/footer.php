@@ -1,1 +1,1 @@
-<h1 style="position:absolute; bottom:5px;" >footer</h1>
+<h1 style="position:absolute; bottom:5px; color: black;" >footer</h1>
