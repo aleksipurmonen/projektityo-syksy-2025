@@ -6,7 +6,7 @@
     if(!isset($_SESSION["userid"])){
         echo '<a href="login.php" class="header-btn">Kirjaudu sisään</a>';
     }else{
-        echo '<a href="logout.php" class="header-btn">Kirjaudu ulos</a>';
+        echo '<p>Kirjautunut '.$_SESSION["name"].' <a href="logout.php" class="header-btn">Kirjaudu ulos</a></p>';
     }
     ?>
 </div>
