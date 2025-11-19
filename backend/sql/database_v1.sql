@@ -57,7 +57,8 @@ ALTER TABLE `users`
   MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-INSERT INTO `users`( `name`, `email`, `passwordhash`, `role`) VALUES ( 'Topi Topi', 'topi@gmail.com', '$2y$10$tL6xJZphXPrTuZQgR4P5e.L.WX3hWW.2Q5hefbvAl8MhtKJpg63JW', 'user') --Testi dataa, salasana on 1234
+INSERT INTO `users`( `name`, `email`, `passwordhash`, `role`) VALUES ( 'Topi Topi', 'topi@gmail.com', '$2y$10$tL6xJZphXPrTuZQgR4P5e.L.WX3hWW.2Q5hefbvAl8MhtKJpg63JW', 'user') 
+--Testi dataa, salasana on 1234
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
