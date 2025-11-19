@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    background-image: 
+  linear-gradient(rgba(20, 30, 40, 0.85), rgba(20, 30, 40, 0.85)),url('../images/dark-abstract-pattern.jpg');;
+}
+h5 {
+    text-align: center;
+    margin-top: 50px;
+    color: #ffffff;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.781);
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+a {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    
+}
+p {
+    font-size: 16px;
+    color: #333;
+}
