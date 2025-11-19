@@ -1,1 +1,3 @@
-<h1 style="position:absolute; top:5px;" >header</h1>
+<div class="header">
+    <img src="../frontend/assets/images/logo.png" alt="logo" class="logo">
+</div>
