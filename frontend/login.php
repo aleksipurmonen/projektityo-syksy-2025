@@ -39,7 +39,7 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
             if ($rooli === 'admin') {
                 header("Location: ../admin/admin.php");
             } else {
-                header("Location: index.php");
+                header("Location: weather.php");
             }
             exit;
         } else {
