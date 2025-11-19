@@ -18,7 +18,10 @@ h5 {
     color: #ffffff;
 }
 form {
-    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(
+        rgba(245, 100, 68, 0.562), 
+        rgba(255, 195, 113, 0.562) 
+    );
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
@@ -42,7 +45,7 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 17px;
     font-size: 16px;
-    background-color: #ffffffcb;
+    background-color: #f1f1f1ad;
 }
 button {
     width: 100%;
