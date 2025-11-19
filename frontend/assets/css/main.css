@@ -129,3 +129,15 @@ p {
     max-width: 75px;
     padding-inline: 15px;
 }
+
+.header-btn{
+    margin-top: 0;
+    margin-inline: 15px;
+    padding: 10px;
+    background-color: #131618;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
