@@ -24,10 +24,10 @@
     <?php endif; ?>
     <h4>Kirjaudu</h4>
     <label>Sähköposti</label>
-    <input type="email" name="gmail" id="gmail" placeholder="Sinä@example.com" required>
+    <input type="email" name="gmail" id="gmail" placeholder="nimi@example.com" required>
     <br>
     <label>Salasana</label>
-    <input type="password" name="salasana" id="salasana" placeholder="Salasana" required>
+    <input type="password" name="salasana" id="salasana" placeholder="salasana" required>
     <a href="register.php">
         <P>Rekisteröidy</P>
     </a>
