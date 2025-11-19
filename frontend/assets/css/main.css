@@ -22,9 +22,10 @@ form {
     padding: 30px;
     border-radius: 13px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 label {
-    display: block;
+    display: inline;
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -52,7 +53,8 @@ button:hover {
     transform: scale(1.01);
 }
 a {
-    text-align: right;
+    display: inline-block;      
+    align-self: flex-end;
     margin-top: 15px;
     color: #141516;
     text-decoration: none;
@@ -64,4 +66,5 @@ a:hover {
 p {
     font-size: 16px;
     color: #333;
+    text-align: left;
 }
