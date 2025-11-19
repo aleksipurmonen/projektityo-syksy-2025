@@ -55,12 +55,13 @@ button:hover {
     transform: scale(1.01);
 }
 a {
-    display: inline-block;      
     align-self: flex-end;
     margin-top: 15px;
     color: #141516;
     text-decoration: none;
+    justify-content: space-between;
 }
+
 a:hover {
     text-decoration: underline;
     
@@ -69,4 +70,28 @@ p {
     font-size: 16px;
     color: #333;
     text-align: left;
+}
+.login-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0; 
+}
+
+.register-link {
+    margin: 0; 
+    text-decoration: none;
+    color: #141516;
+}
+
+.register-link:hover {
+    text-decoration: underline;
 }

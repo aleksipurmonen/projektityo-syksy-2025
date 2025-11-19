@@ -28,9 +28,16 @@
     <br>
     <label>Salasana</label>
     <input type="password" name="salasana" id="salasana" placeholder="salasana" required>
-    <input type="checkbox" name="remember_me" id="remember_me"> <label for="remember_me">Muista minut</label>
-    <a href="register.php">Rekisteröidy</a>
-    <button type="submit">Kirjaudu</button>
+<div class="login-extra">
+    <label class="remember-me">
+        <input type="checkbox" id="remember_me" name="remember_me">
+        Muista minut
+    </label>
+
+    <a href="register.php" class="register-link">Rekisteröidy</a>
+</div>
+
+<button type="submit">Kirjaudu</button>
 </form>
 </div>
 </body>
