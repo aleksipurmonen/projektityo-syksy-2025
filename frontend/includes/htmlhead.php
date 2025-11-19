@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../frontend/assets/css/main.css">
+    <?php 
+    require_once("../frontend/includes/header.php");
+    require_once("../frontend/includes/footer.php");
+     ?>
