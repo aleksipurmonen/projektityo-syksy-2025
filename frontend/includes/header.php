@@ -1,4 +1,12 @@
 <div class="header">
     <img src="../frontend/assets/images/logo.png" alt="logo" class="logo">
-    <a href="login.php" class="header-btn">Kirjaudu sisään</a>
+    <?php
+    session_start();
+    
+    if(!isset($_SESSION["userid"])){
+        echo '<a href="login.php" class="header-btn">Kirjaudu sisään</a>';
+    }else{
+        echo '<a href="logout.php" class="header-btn">Kirjaudu ulos</a>';
+    }
+    ?>
 </div>
