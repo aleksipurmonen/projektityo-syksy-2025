@@ -55,7 +55,7 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
 <!doctype html>
 <html>
 <head>
-<title>login</title>
+<title>Kirjaudu sisään</title>
 <link rel="stylesheet" href="logintyyli.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,7 +77,8 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
 <?php if (isset($_SESSION['success_message'])): ?>
     <div class="alert alert-success"><?php echo "✅ " . htmlspecialchars($_SESSION['success_message']); unset($_SESSION['success_message']); ?></div>
 <?php endif; ?>
-    <h3>Kirjaudu</h3>
+    <a href="index.php">← Takaisin etusivulle</a>
+    <h2>Kirjaudu sisään</h2>
     <br>
     <label>Sähköposti</label>
     <input type="email" name="gmail" id="gmail" placeholder="nimi@example.com" required>
