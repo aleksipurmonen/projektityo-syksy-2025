@@ -1,7 +1,5 @@
 # projektityö
 
---
-
 ## ✨ Ominaisuudet
 - 🔐 Käyttäjän kirjautuminen  
 - 🌤️ Säätietojen näyttäminen JSON-tiedostosta  
