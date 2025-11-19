@@ -31,9 +31,10 @@
     <br>
     <label>Salasana</label>
     <input type="password" name="salasana" id="salasana" placeholder="salasana" required>
-    <a href="login.php">
-        <P>Kirjautumaan</P>
-    </a>
+<div class="login-container">
+    <a href="login.php" class="login-link">Kirjautumaan</a>
+</div>
+<br>
     <button type="submit">Rekisteröidy</button>
 </form>
 </div>

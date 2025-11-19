@@ -95,3 +95,13 @@ p {
 .register-link:hover {
     text-decoration: underline;
 }
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-link {
+    align-self: flex-end;
+    margin-top: 0;
+}
+
