@@ -5,6 +5,7 @@
     require_once("includes/htmlhead.php");
     ?>
     <title>Document</title>
+    <link rel="stylesheet" href="../frontend/assets/css/main.css">
 </head>
 <body>
     
