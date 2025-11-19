@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <?php
-    require_once("includes/htmlhead.php");
+    require_once("includes/htmlhead.php"); //sisältää footer, header, css, bootstrap
     ?>
     <title>Document</title>
-    <link rel="stylesheet" href="../frontend/assets/css/main.css">
 </head>
 <body>
     
