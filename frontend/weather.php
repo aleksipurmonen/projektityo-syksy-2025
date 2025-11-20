@@ -6,14 +6,13 @@
     ?>
     <title>Document</title>
 </head>
-<body>
-    
-</body>
-</html>
-
 <?php
 if(!isset($_SESSION["userid"])){
     header("Location: logout.php");
     exit;
 }
 ?>
+<body>
+    
+</body>
+</html>
