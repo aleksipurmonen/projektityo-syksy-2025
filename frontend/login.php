@@ -68,35 +68,55 @@ $stmt->bind_result($kayttajaID, $nimi, $gmail_db, $hash, $rooli);
      ?>
 </head>
 <body>
+
 <div class="container">
-<form action="login.php" method="post">
-<?php if (!empty($error)): ?>
-    <div class="alert alert-danger"><?php echo $error; ?></div>
-<?php endif; ?>
+    <!-- Kirjautumislomake, joka lähettää tiedot login.php:lle POST-metodilla -->
+ <form action="login.php" method="post">
 
-<?php if (isset($_SESSION['success_message'])): ?>
-    <div class="alert alert-success"><?php echo "✅ " . htmlspecialchars($_SESSION['success_message']); unset($_SESSION['success_message']); ?></div>
-<?php endif; ?>
-    
-    <h2>Kirjaudu sisään</h2>
-    <br>
-    <label>Sähköposti</label>
-    <input type="email" name="gmail" id="gmail" placeholder="nimi@example.com" required>
-    <br>
-    <label>Salasana</label>
-    <input type="password" name="salasana" id="salasana" placeholder="salasana" required>
-<div class="login-extra">
-    <label class="remember-me">
-        <input type="checkbox" id="remember_me" name="remember_me">
-        Muista minut
-    </label>
+        <?php if (!empty($error)): ?>
+            <!-- Näytetään virheilmoitus, jos $error on asetettu -->
+            <div class="alert alert-danger"><?php echo $error; ?></div>
+        <?php endif; ?>
 
-    <a href="register.php" class="register-link">Rekisteröidy</a>
-</div>
-<button type="submit">Kirjaudu</button>
-<br><br>
-<a href="index.php">← Takaisin etusivulle</a>
-</form>
+        <?php if (isset($_SESSION['success_message'])): ?>
+            <!-- Näytetään onnistumisviesti, jos sessiossa on success_message -->
+            <div class="alert alert-success">
+                <?php echo "✅ " . htmlspecialchars($_SESSION['success_message']); 
+                unset($_SESSION['success_message']); ?>
+            </div>
+        <?php endif; ?>
+        
+        <!-- Lomakkeen otsikko -->
+        <h2>Kirjaudu sisään</h2>
+        <br>
+
+        <!-- Sähköpostikenttä -->
+        <label>Sähköposti</label>
+        <input type="email" name="gmail" id="gmail" placeholder="nimi@example.com" required>
+        <br>
+
+        <!-- Salasanakenttä -->
+        <label>Salasana</label>
+        <input type="password" name="salasana" id="salasana" placeholder="salasana" required>
+
+        <div class="login-extra">
+            <!-- Muista minut -valintaruutu -->
+            <label class="remember-me">
+                <input type="checkbox" id="remember_me" name="remember_me">
+                Muista minut
+            </label>
+
+            <!-- Linkki rekisteröitymissivulle -->
+            <a href="register.php" class="register-link">Rekisteröidy</a>
+        </div>
+
+        <!-- Kirjautumispainike -->
+        <button type="submit">Kirjaudu</button>
+        <br><br>
+
+        <!-- Linkki takaisin etusivulle -->
+        <a href="index.php">← Takaisin etusivulle</a>
+    </form>
 </div>
 </body>
 </html>
