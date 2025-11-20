@@ -29,7 +29,7 @@
 
 4. Luo tietokanta MySQL:ssä ja tuo tietokannan rakenne:
 
-5. Luo tietokanta nimeltä (tai haluamasi nimi).
+5. Luo tietokanta nimeltä weather_app (tai haluamasi nimi).
 
 6. Kopioi .env.example tiedosto ja nimeä se .env:
 Määrittele .env tiedostoon arkaluonteiset asiat kuten tietokantayhteys asetukset sekä API -avaimet
