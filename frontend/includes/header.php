@@ -7,7 +7,7 @@
     if(!isset($_SESSION["userid"])){
         echo '<a href="login.php" class="header-btn">Kirjaudu sisään</a>';
     }else{
-        echo '<p style="margin:0px;padding:10px">Kirjautunut '.$_SESSION["name"].' <a href="logout.php" class="header-btn">Kirjaudu ulos</a></p>';
+        echo '<div style="display: flex; justify-content: space-between;"><p style="margin:0px;padding:10px">Kirjautunut '.$_SESSION["name"].'</p><a href="logout.php" class="header-btn">Kirjaudu ulos</a></div>';
     }
     ?>
 </div>
