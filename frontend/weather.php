@@ -10,7 +10,13 @@
     <div class="container2">
         <h4>Sään seuranta</h4>
         
-        
+           <div class="weather-info">
+            <h4>Nykyinen sää:</h4>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
     </div>
 </body>
 </html>
