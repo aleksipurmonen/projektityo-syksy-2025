@@ -16,6 +16,9 @@ h3 {
     text-align: left;
     margin-top: 50px;
 }
+h3 {
+    text-align: center;
+}
 p {
     font-size: 16px;
     color: #333;
@@ -195,4 +198,5 @@ a:hover {
     width: 100%;
     border-radius: 13px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+    text-align: center;
 }
