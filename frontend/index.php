@@ -5,6 +5,6 @@
     <title>Etusivu</title>
 </head>
 <body>
-    
+    <p style="color:white;">Kirjaudu sisään nähdäksesi säätiedot.</p>
 </body>
 </html>
