@@ -22,7 +22,7 @@ function getSuomi($koodi) {
         'clearsky_day' => [ 'assets/icons/Aurinko.png'],
         'clearsky_night' => ['assets/icons/Selkeää yö.png'],
         'partlycloudy_day' => ['assets/icons/Puolipilvinen.png'], 
-        'partlycloudy_night' => ['assets/icons/pilvinen yö.png'],
+        'partlycloudy_night' => ['assets/icons/pilvinen yö.png'] ,
         'cloudy' => [' assets/icons/pilvinen.png'],
         'rain' => ['assets/icons/sateinen.png'],
         'lightrain' => ['assets/icons/tihkusade.png'],
@@ -36,9 +36,9 @@ function getSuomi($koodi) {
 
     if (isset($taulukko[$koodi])) {
         [$kuvalinkki] = $taulukko[$koodi];
-        return $kuvalinkki
-            ? ' <img src="' . $kuvalinkki . '" alt="' . '" style="width:40px; vertical-align:middle;">'
-            : $kuvalinkki;
+return $kuvalinkki
+    ? ' <img src="' . $kuvalinkki . '" alt="" class="weather-icon2">'
+    : $kuvalinkki;
     }
 
     return $koodi;
@@ -110,14 +110,12 @@ $temp = $piste['data']['instant']['details']['air_temperature'];
 $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 ?>
 
-<h1>
-    <?php echo $localTimeStr; ?>
-</h1>
+<!-- Näytä sääinfo -->
 <h1>
     <?php echo getSuomi($saatieto); ?>
 </h1>
 <h1>
-    <?php echo $temp; ?>
+    <?php echo $temp; ?>°
 </h1>
 
 
