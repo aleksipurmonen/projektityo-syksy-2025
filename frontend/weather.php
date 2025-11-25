@@ -2,6 +2,47 @@
 <html lang="en">
 <head>
     <?php
+$latitude = 62.8924;
+$longitude = 27.6770;
+$url = "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=$latitude&lon=$longitude";
+$options = [
+    "http" =>[
+    "header" => "User-Agent: OmaSovellus/1.0 oma.sahkoposti@example.com\r\n"
+    ]
+    ];
+$context = stream_context_create($options);
+$response = file_get_contents($url, false, $context);
+if($response===FALSE)  {
+    die("Säädatan haku epäonnistui.");
+}
+$data = json_decode($response, true);
+$aikasarja = array_slice($data['properties']['timeseries'], 0, 6);
+function getSuomi($koodi) {
+    $taulukko = [
+        'clearsky_day' => [ 'assets/icons/Aurinko.png'],
+        'clearsky_night' => ['assets/icons/Selkeää yö.png'],
+        'partlycloudy_day' => ['assets/icons/Puolipilvinen.png'], 
+        'partlycloudy_night' => ['assets/icons/pilvinen yö.png'],
+        'cloudy' => [' assets/icons/pilvinen.png'],
+        'rain' => ['assets/icons/sateinen.png'],
+        'lightrain' => ['assets/icons/tihkusade.png'],
+        'heavyrain' => ['assets/icons/sateinen.png'],
+        'snow' => ['assets/icons/lumisade.png'],
+        'lightsnow' => ['assets/icons/pakkanen.png'],
+        'heavysnow' => ['assets/icons/lumisade.png'],
+        'fog' => ['assets/icons/sumu.png'],
+        'fair_day' => ['Selkeää päivällä', 'assets/icons/Aurinko.png']
+    ];
+
+    if (isset($taulukko[$koodi])) {
+        [$kuvalinkki] = $taulukko[$koodi];
+        return $kuvalinkki
+            ? ' <img src="' . $kuvalinkki . '" alt="' . '" style="width:40px; vertical-align:middle;">'
+            : $kuvalinkki;
+    }
+
+    return $koodi;
+}
     require_once("includes/htmlhead.php"); //sisältää footer, header, css, bootstrap
     ?>
     <title>Document</title>
@@ -10,6 +51,14 @@
 
     
     <div class="container2">
+        
+    
+           <div class="weather-info">
+             
+           
+
+    
+    
         
     <div id="clock" aria-live="polite"></div> 
 <script>
@@ -47,10 +96,23 @@
 </script>
            <div class="weather">
              
-           <h4>Nykyinen sää:</h4>
-            <p></p>
-            <p></p>
-            <p></p>
+           
+<?php
+// Ota vain ensimmäinen aikapiste
+$piste = $aikasarja[0];
+
+$temp = $piste['data']['instant']['details']['air_temperature'];
+$saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
+?>
+
+<table>
+
+    <tr>
+        <td><?php echo $temp; ?></td>
+        <td><?php echo getSuomi($saatieto); ?></td>
+    </tr>
+</table>
+
             
 
         </div>
