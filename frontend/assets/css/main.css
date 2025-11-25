@@ -192,13 +192,14 @@ form {
     margin: 50px auto  ;
 }
 .weather {
-   background: linear-gradient(to bottom, #fffffff6, #3387ad ,#4b86dfcb );
+    background: linear-gradient(to left, #f7cac9, #92a8d1);
     padding: 20px;
     border-radius: 10px;
     max-width: none;
     height:20vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -251,7 +252,12 @@ form {
     width: auto;
     height: auto;
 }
-
+.weather-icon2{
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
 
 
 @media (max-width: 768px) {
