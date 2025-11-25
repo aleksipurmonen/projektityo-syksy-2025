@@ -199,10 +199,6 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     text-align: center;
     margin: 50px auto  ;
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    flex-wrap:wrap;
 }
 .weather-info {
     background: rgba(255, 255, 255, 0.836);
@@ -214,19 +210,21 @@ a:hover {
     text-align: center;
     margin: 0 auto  ;
     margin-bottom: 20px;
-    flex: 0 0 100%;
-
 }
 .weather-info2 {
+    flex: 1;
     border-radius: 10px;
     padding: 20px;
-    margin-left: 20px;
     max-width: 20%;
     background: rgba(255, 208, 0, 0.836);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
-    margin: 0 auto  ;
     height: 10vh;
-    flex: 0 0 30%;
+}
+.rivitin{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -235,7 +233,8 @@ a:hover {
         margin: 20px;
     }
     .weather-info2{
-        flex: 0 0 100%;
+        flex: 0;
+        max-width: none;
     }
 }
 

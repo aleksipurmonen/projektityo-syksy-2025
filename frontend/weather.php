@@ -54,34 +54,10 @@
             
 
         </div>
-        <div class="weather-info2">
-             
-             <h4>Viikon sääennuste:</h4>
-              <p></p>
-              <p></p>
-              <p></p>
-              
-  
-          </div>
-                  <div class="weather-info2">
-             
-             <h4>Viikon sääennuste:</h4>
-              <p></p>
-              <p></p>
-              <p></p>
-              
-  
-          </div>
-
-                  <div class="weather-info2">
-             
-             <h4>Viikon sääennuste:</h4>
-              <p></p>
-              <p></p>
-              <p></p>
-              
-  
-          </div>
+        <div class="rivitin">
+        <div class="weather-info2">Icon</div>
+        <div class="weather-info2">Icon</div> 
+        <div class="weather-info2">Icon</div>
 
 
     </div>
