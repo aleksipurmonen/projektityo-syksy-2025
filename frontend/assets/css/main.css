@@ -262,32 +262,31 @@ form {
 
 @media (max-width: 768px) {
     .container2 {
-        padding: 30px;
+        padding: 50px;
         margin: 20px;
-        padding-inline: 0;
     }
     .rivitin {
         flex-wrap: nowrap;
         justify-content: center; 
+        width: calc(75% + 40px);
+        justify-self: center;
     }
     .weather-info1 {
-        flex: 0 0 10%;
         max-width: 100%;
         gap: 5px;
     }
      .weather-info2 {
-        flex: 0 0 10%;
         max-width: 100%;
         gap: 5px;
     }
      .weather-info3 {
-        flex: 0 0 10%;
         max-width: 100%;
         gap: 5px;
     }
     .weather{
         justify-self: center;
-        width: 200px;
+        width: 75%;
+        min-width: 150px;
     }
     .weather-icon{
     max-width: 20px;
