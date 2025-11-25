@@ -105,7 +105,7 @@ $temp = $piste['data']['instant']['details']['air_temperature'];
 $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 ?>
 
-<table>
+<table> <!-- Taulukko säädatalle -->
 
     <tr>
         <td><?php echo $temp; ?></td>
