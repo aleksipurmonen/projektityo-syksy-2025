@@ -197,7 +197,7 @@ a:hover {
     text-align: center;
     margin: 50px auto  ;
 }
-.weather-info {
+.weather {
     background: rgba(255, 255, 255, 0.836);
     padding: 20px;
     border-radius: 10px;
@@ -207,14 +207,41 @@ a:hover {
     text-align: center;
     margin-bottom: 20px;
 }
+.weather-info1 {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 22%;
+    background: linear-gradient(to top, #5ca3ff, #2e5b96);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .weather-info2 {
     flex: 1;
     border-radius: 10px;
     padding: 20px;
     max-width: 22%;
-    background: rgba(255, 208, 0, 0.836);
+    background: linear-gradient(to top, #dffff4, #81ebc6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-info3 {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 22%;
+    background: linear-gradient(to top, #e6e6e6, #7e7d7d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+    height: 10vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rivitin{
     display: flex;
@@ -233,7 +260,17 @@ a:hover {
         flex-wrap: nowrap;
         justify-content: center; 
     }
-    .weather-info2 {
+    .weather-info1 {
+        flex: 0 0 10%;
+        max-width: 100%;
+        gap: 5px;
+    }
+     .weather-info2 {
+        flex: 0 0 10%;
+        max-width: 100%;
+        gap: 5px;
+    }
+     .weather-info3 {
         flex: 0 0 10%;
         max-width: 100%;
         gap: 5px;

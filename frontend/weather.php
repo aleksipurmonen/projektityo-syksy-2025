@@ -45,7 +45,7 @@
   updateClock();                // ensimmäinen päivitys heti kun sivu avataan
   setInterval(updateClock, 1000); // Päivitetään sekunnin välein
 </script>
-           <div class="weather-info">
+           <div class="weather">
              
            <h4>Nykyinen sää:</h4>
             <p></p>
@@ -55,9 +55,9 @@
 
         </div>
         <div class="rivitin">
-        <div class="weather-info2">Icon</div>
+        <div class="weather-info1">Icon</div>
         <div class="weather-info2">Icon</div> 
-        <div class="weather-info2">Icon</div>
+        <div class="weather-info3">Icon</div>
 
 
     </div>
