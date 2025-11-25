@@ -215,15 +215,15 @@ a:hover {
     flex: 1;
     border-radius: 10px;
     padding: 20px;
-    max-width: 20%;
+    max-width: 22%;
     background: rgba(255, 208, 0, 0.836);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
 }
 .rivitin{
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: space-around;
+    gap: 20px;
     flex-wrap: nowrap;
 }
 
@@ -233,7 +233,7 @@ a:hover {
         margin: 20px;
     }
     .weather-info2{
-        flex: 0;
+        flex: 1;
         max-width: none;
     }
 }
