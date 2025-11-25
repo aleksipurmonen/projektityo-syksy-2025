@@ -188,7 +188,7 @@ a:hover {
 
 /*----------SÄÄSEURANTA----------*/
 .container2 {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.541);
     padding: 50px;
     border-radius: 10px;
     max-width: 50%;
@@ -198,7 +198,7 @@ a:hover {
     margin: 50px auto  ;
 }
 .weather {
-    background: rgba(255, 255, 255, 0.836);
+   background: linear-gradient(to bottom, #f144e9, #8842c9);
     padding: 20px;
     border-radius: 10px;
     max-width: none;
