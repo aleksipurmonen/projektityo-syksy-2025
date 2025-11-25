@@ -203,31 +203,42 @@ form {
     align-items: center;
     margin-bottom: 20px;
 }
-
-.weather-info{
+.weather-info1 {
     flex: 1;
     border-radius: 10px;
     padding: 20px;
     max-width: 22%;
+    background: linear-gradient(to left, #b7c8df, #578fd8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.wthr-icon1 {
-    background: linear-gradient(to left, #b7c8df, #578fd8);
-
-}
-.wthr-icon2 {
+.weather-info2 {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 22%;
     background: linear-gradient(to left, #dffff4, #81ebc6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.wthr-icon3 {
+.weather-info3 {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 22%;
     background: linear-gradient(to left, #e6e6e6, #7e7d7d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+    height: 10vh;
+     display: flex;
+     justify-content: center;
+    align-items: center;
 }
-
-
 .rivitin{
     display: flex;
     justify-content: space-between;
@@ -253,12 +264,21 @@ form {
         flex-wrap: nowrap;
         justify-content: center; 
     }
-    .weather-info {
+    .weather-info1 {
         flex: 0 0 10%;
         max-width: 100%;
         gap: 5px;
     }
-
+     .weather-info2 {
+        flex: 0 0 10%;
+        max-width: 100%;
+        gap: 5px;
+    }
+     .weather-info3 {
+        flex: 0 0 10%;
+        max-width: 100%;
+        gap: 5px;
+    }
     .weather{
         justify-self: center;
         width: 200px;
