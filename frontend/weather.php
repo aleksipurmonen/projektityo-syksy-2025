@@ -55,9 +55,9 @@
 
         </div>
         <div class="rivitin">
-        <div class="weather-info1">Icon</div>
-        <div class="weather-info2">Icon</div> 
-        <div class="weather-info3">Icon</div>
+        <div class="weather-info1"><img src="assets/icons/kosteus.png" alt="sade" class="weather-icon"></div>
+        <div class="weather-info2"><img src="assets/icons/tuuli.png" alt="sade" class="weather-icon"></div> 
+        <div class="weather-info3"><img src="assets/icons/sumu.png" alt="sade" class="weather-icon"></div>
 
 
     </div>
