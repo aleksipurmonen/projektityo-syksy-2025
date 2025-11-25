@@ -198,7 +198,9 @@ form {
     max-width: none;
     height:20vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 .weather-info1 {
@@ -206,7 +208,7 @@ form {
     border-radius: 10px;
     padding: 20px;
     max-width: 22%;
-    background: linear-gradient(to top, #5ca3ff, #2e5b96);
+    background: linear-gradient(to left, #5ca3ff, #2e5b96);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
     display: flex;
@@ -218,7 +220,7 @@ form {
     border-radius: 10px;
     padding: 20px;
     max-width: 22%;
-    background: linear-gradient(to top, #dffff4, #81ebc6);
+    background: linear-gradient(to left, #dffff4, #81ebc6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
     display: flex;
@@ -230,7 +232,7 @@ form {
     border-radius: 10px;
     padding: 20px;
     max-width: 22%;
-    background: linear-gradient(to top, #e6e6e6, #7e7d7d);
+    background: linear-gradient(to left, #e6e6e6, #7e7d7d);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
      display: flex;
