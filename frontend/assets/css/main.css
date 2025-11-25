@@ -16,15 +16,14 @@ h3 {
     text-align: left;
     margin-top: 50px;
 }
-h3 {
-    text-align: center;
-}
 p {
     font-size: 16px;
     color: #333;
     text-align: left;
 }
-
+h1{
+    font-size: 32px;
+}
 
 
 /*----------LOMAKE----------*/
@@ -253,8 +252,8 @@ form {
     height: auto;
 }
 .weather-icon2{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 125px;
+    max-height: 125px;
     width: auto;
     height: auto;
 }
@@ -291,6 +290,10 @@ form {
     .weather-icon{
     max-width: 20px;
     max-height: 20px;
+}
+.weather-icon2{
+    max-width: 60px;
+    max-height: 60px;
 }
 }
 
