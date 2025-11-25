@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="container2">
-        <h4>Sään seuranta</h4>
         
            <div class="weather-info">
              

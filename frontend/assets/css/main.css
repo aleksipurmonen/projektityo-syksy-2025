@@ -202,7 +202,7 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .weather-info {
     background: rgba(255, 255, 255, 0.836);
@@ -226,13 +226,16 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     margin: 0 auto  ;
     height: 10vh;
-    flex: 1;
+    flex: 0 0 30%;
 }
 
 @media (max-width: 768px) {
     .container2 {
         padding: 30px;
         margin: 20px;
+    }
+    .weather-info2{
+        flex: 0 0 100%;
     }
 }
 
