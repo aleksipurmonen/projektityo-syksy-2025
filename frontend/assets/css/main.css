@@ -192,7 +192,7 @@ form {
     margin: 50px auto  ;
 }
 .weather {
-   background: linear-gradient(to bottom, #f144e9, #8842c9);
+   background: linear-gradient(to bottom, #fffffff6, #3387ad ,#4b86dfcb );
     padding: 20px;
     border-radius: 10px;
     max-width: none;
