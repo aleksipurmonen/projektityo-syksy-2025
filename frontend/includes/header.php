@@ -1,5 +1,5 @@
 <div class="header">
-    <img src="../frontend/assets/images/logo.png" alt="logo" class="logo">
+    <img src="../frontend/assets/images/logo_vanha.png" alt="logo" class="logo">
     <?php
     
     //Kirjaudu sisään/ulos painike riippuen siitä, onko käyttäjä kirjautunut vai ei
