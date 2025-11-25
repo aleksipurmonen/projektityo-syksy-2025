@@ -194,7 +194,7 @@ a:hover {
     background: rgba(255, 255, 255, 0.8);
     padding: 50px;
     border-radius: 10px;
-    max-width: 75%;
+    max-width: 50%;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     text-align: center;
@@ -204,11 +204,10 @@ a:hover {
     background: rgba(255, 255, 255, 0.836);
     padding: 20px;
     border-radius: 10px;
-    max-width: 90%;
-    height: 25vh;
+    max-width: none;
+    height:20vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     text-align: center;
-    margin: 0 auto  ;
     margin-bottom: 20px;
 }
 .weather-info2 {
@@ -222,8 +221,8 @@ a:hover {
 }
 .rivitin{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 5px;
     flex-wrap: nowrap;
 }
 
@@ -232,9 +231,14 @@ a:hover {
         padding: 30px;
         margin: 20px;
     }
-    .weather-info2{
-        flex: 1;
-        max-width: none;
+    .rivitin {
+        flex-wrap: nowrap;
+        justify-content: center; 
+    }
+    .weather-info2 {
+        flex: 0 0 10%;
+        max-width: 100%;
+        gap: 5px;
     }
 }
 
