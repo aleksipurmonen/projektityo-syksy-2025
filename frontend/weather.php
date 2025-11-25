@@ -105,13 +105,14 @@ $temp = $piste['data']['instant']['details']['air_temperature'];
 $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 ?>
 
-<table>
+<h1>
+    <?php echo getSuomi($saatieto); ?>
+</h1>
+<h1>
+    <?php echo $temp; ?>
+</h1>
 
-    <tr>
-        <td><?php echo $temp; ?></td>
-        <td><?php echo getSuomi($saatieto); ?></td>
-    </tr>
-</table>
+
 
             
 
