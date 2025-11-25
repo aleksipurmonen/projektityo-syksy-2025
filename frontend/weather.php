@@ -31,7 +31,7 @@ function getSuomi($koodi) {
         'lightsnow' => ['assets/icons/pakkanen.png'],
         'heavysnow' => ['assets/icons/lumisade.png'],
         'fog' => ['assets/icons/sumu.png'],
-        'fair_day' => ['Selkeää päivällä', 'assets/icons/Aurinko.png']
+        'fair_day' => ['assets/icons/Aurinko.png']
     ];
 
     if (isset($taulukko[$koodi])) {
@@ -101,10 +101,18 @@ function getSuomi($koodi) {
 // Ota vain ensimmäinen aikapiste
 $piste = $aikasarja[0];
 
+// Muunna UTC-aika Suomen aikaan
+$utcTime = new DateTime($piste['time'], new DateTimeZone('UTC'));
+$utcTime->setTimezone(new DateTimeZone('Europe/Helsinki'));
+$localTimeStr = $utcTime->format('H:i'); 
+
 $temp = $piste['data']['instant']['details']['air_temperature'];
 $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 ?>
 
+<h1>
+    <?php echo $localTimeStr; ?>
+</h1>
 <h1>
     <?php echo getSuomi($saatieto); ?>
 </h1>
