@@ -185,9 +185,6 @@ a:hover {
 
 
 
-/*----------OTSIKKO----------*/
-
-
 
 /*----------SÄÄSEURANTA----------*/
 .container2 {
@@ -230,6 +227,7 @@ a:hover {
     .container2 {
         padding: 30px;
         margin: 20px;
+        padding-inline: 0;
     }
     .rivitin {
         flex-wrap: nowrap;
@@ -240,5 +238,14 @@ a:hover {
         max-width: 100%;
         gap: 5px;
     }
+    .weather-info{
+        justify-self: center;
+        width: 200px;
+    }
 }
 
+@media(max-width: 450px){
+    .header-username{
+        display: none;
+    }
+}
