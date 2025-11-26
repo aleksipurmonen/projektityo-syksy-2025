@@ -170,7 +170,7 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
         for ($i=1; $i < 6; $i++) {
             $kuva = getSuomismall($aikasarja[$i]['data']['next_1_hours']['summary']['symbol_code']);
             $temp = $aikasarja[$i]['data']['instant']['details']['air_temperature'];
-            echo '<div class="card"><p>'. $kuva .'<br>'. $temp .'</p></div>';
+            echo '<div class="card"><p>'. $kuva .'<br>'. $temp . '°' .'</p></div>';
         }
         ?>
     </div>
