@@ -165,6 +165,7 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
 
     </div>
     <br>
+    <div class="container3">
     <div class="scrolling-wrapper">
         <?php
         $maxCards = min(12, count($aikasarja)); // Varmistaa, ettei yritetä näyttää enempää kortteja kuin mitä on saatavilla
@@ -179,6 +180,7 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
             echo '<div class="card"><p>'. $time . '<br>' . $img .'<br>'. $temp . '°' .'</p></div>';
         }
         ?>
+    </div>
     </div>
 </body>
 </html>
