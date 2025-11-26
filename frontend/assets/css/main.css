@@ -257,7 +257,7 @@ form {
     white-space: nowrap;
 
 }
-.scrolling-wrapper .card {
+.card {
     display: inline-block;
     background: #ffffff;
     border-radius: 15px;
@@ -293,13 +293,23 @@ form {
     .weather-icon{
     max-width: 20px;
     max-height: 20px;
-}
-.weather-icon2{
-    max-width: 60px;
-    max-height: 60px;
+    }
+    .weather-icon2{
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .scrolling-wrapper{
+        width: calc(75% + 40px);
+        justify-self: center;
+    }
+    .card{
+        max-width: 50px;
+        max-height: 50px;
+        margin-inline: 5px;
+    }
 }
 
-}
+
 @media(max-width: 450px){
     .header-username{
         display: none;
