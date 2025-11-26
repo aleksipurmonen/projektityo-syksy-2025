@@ -157,9 +157,9 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
 
         </div>
         <div class="rivitin">
-        <div class="weather-info1"><img src="assets/icons/kosteus.png" alt="sade" class="weather-icon"><?= $humidity ?>%</div>
-        <div class="weather-info2"><img src="assets/icons/tuuli.png" alt="sade" class="weather-icon"><?= $windSpeed ?>m/s <br> <?= $windDir ?>°</div> 
-        <div class="weather-info3"><img src="assets/icons/sumu.png" alt="sade" class="weather-icon"><?= $visibility !== null ? $visibility . " m" : "Ei tietoa" ?></div>
+        <div class="weather-info1"><img src="assets/icons/kosteus.png" alt="sade" class="weather-icon"><p><?= $humidity ?>%</p></div>
+        <div class="weather-info2"><img src="assets/icons/tuuli.png" alt="sade" class="weather-icon"><p><?= $windSpeed ?>m/s <br> <?= $windDir ?>°</p></div> 
+        <div class="weather-info3"><img src="assets/icons/sumu.png" alt="sade" class="weather-icon"><p><?= $visibility !== null ? $visibility . " m" : "Ei tietoa" ?></p></div>
 
 
     </div>
