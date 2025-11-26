@@ -135,6 +135,12 @@ $localTimeStr = $utcTime->format('H:i');
 
 $temp = $piste['data']['instant']['details']['air_temperature'];
 $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
+
+// Muita sääparametreja
+$humidity   = $piste['data']['instant']['details']['relative_humidity'];   // %
+$windSpeed  = $piste['data']['instant']['details']['wind_speed'];          // m/s
+$windDir    = $piste['data']['instant']['details']['wind_from_direction']; // astetta
+$visibility = $piste['data']['instant']['details']['visibility'] ?? null;          // metreinä
 ?>
 
 <!-- Näytä sääinfo -->
@@ -151,9 +157,9 @@ $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 
         </div>
         <div class="rivitin">
-        <div class="weather-info1"><img src="assets/icons/kosteus.png" alt="sade" class="weather-icon"></div>
-        <div class="weather-info2"><img src="assets/icons/tuuli.png" alt="sade" class="weather-icon"></div> 
-        <div class="weather-info3"><img src="assets/icons/sumu.png" alt="sade" class="weather-icon"></div>
+        <div class="weather-info1"><img src="assets/icons/kosteus.png" alt="sade" class="weather-icon"><?= $humidity ?>%</div>
+        <div class="weather-info2"><img src="assets/icons/tuuli.png" alt="sade" class="weather-icon"><?= $windSpeed ?>m/s <br> <?= $windDir ?>°</div> 
+        <div class="weather-info3"><img src="assets/icons/sumu.png" alt="sade" class="weather-icon"><?= $visibility !== null ? $visibility . " m" : "Ei tietoa" ?></div>
 
 
     </div>
