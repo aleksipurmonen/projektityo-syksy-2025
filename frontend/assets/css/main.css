@@ -304,7 +304,6 @@ form {
     }
     .card{
         max-width: 50px;
-        max-height: 50px;
         margin-inline: 5px;
     }
 }
