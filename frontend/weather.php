@@ -16,7 +16,7 @@ if($response===FALSE)  {
     die("Säädatan haku epäonnistui."); //Virhe ilmoitus jos säädätan haku epäonnistuu
 }
 $data = json_decode($response, true);
-$aikasarja = array_slice($data['properties']['timeseries'], 0, 6);
+$aikasarja = array_slice($data['properties']['timeseries'], 0, 12);
 function getSuomibig($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
     $taulukko = [
         'clearsky_day' => [ 'assets/icons/Aurinko.png'],
@@ -167,7 +167,8 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
     <br>
     <div class="scrolling-wrapper">
         <?php
-        for ($i=1; $i < 6; $i++) {
+        $maxCards = min(12, count($aikasarja)); // Varmistaa, ettei yritetä näyttää enempää kortteja kuin mitä on saatavilla
+        for ($i=0; $i < $maxCards; $i++) {
             $img = getSuomismall($aikasarja[$i]['data']['next_1_hours']['summary']['symbol_code']);
             $temp = $aikasarja[$i]['data']['instant']['details']['air_temperature'];
             
