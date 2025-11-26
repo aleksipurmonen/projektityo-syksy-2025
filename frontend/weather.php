@@ -17,7 +17,7 @@ if($response===FALSE)  {
 }
 $data = json_decode($response, true);
 $aikasarja = array_slice($data['properties']['timeseries'], 0, 6);
-function getSuomi($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
+function getSuomibig($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
     $taulukko = [
         'clearsky_day' => [ 'assets/icons/Aurinko.png'],
         'clearsky_night' => ['assets/icons/Selkeää yö.png'],
@@ -43,6 +43,33 @@ return $kuvalinkki
 
     return $koodi; 
 }
+function getSuomismall($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
+    $taulukko = [
+        'clearsky_day' => [ 'assets/icons/Aurinko.png'],
+        'clearsky_night' => ['assets/icons/Selkeää yö.png'],
+        'partlycloudy_day' => ['assets/icons/Puolipilvinen.png'], 
+        'partlycloudy_night' => ['assets/icons/pilvinen yö.png'] ,
+        'cloudy' => [' assets/icons/pilvinen.png'],
+        'rain' => ['assets/icons/sateinen.png'],
+        'lightrain' => ['assets/icons/tihkusade.png'],
+        'heavyrain' => ['assets/icons/sateinen.png'],
+        'snow' => ['assets/icons/lumisade.png'],
+        'lightsnow' => ['assets/icons/pakkanen.png'],
+        'heavysnow' => ['assets/icons/lumisade.png'],
+        'fog' => ['assets/icons/sumu.png'],
+        'fair_day' => ['assets/icons/Aurinko.png']
+    ];
+
+    if (isset($taulukko[$koodi])) {
+        [$kuvalinkki] = $taulukko[$koodi]; // Purkaa taulukon saadakseen kuvalinkin
+return $kuvalinkki
+    ? ' <img src="' . $kuvalinkki . '" alt="" class="weather-icon3">' // Palauttaa kuvalinkin HTML-kuvana
+    : $kuvalinkki;
+    }
+
+    return $koodi; 
+}
+
     require_once("includes/htmlhead.php"); //sisältää footer, header, css, bootstrap
     ?>
     <title>Document</title>
@@ -112,7 +139,7 @@ $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 
 <!-- Näytä sääinfo -->
 <h1>
-    <?php echo getSuomi($saatieto); ?>
+    <?php echo getSuomibig($saatieto); ?>
 </h1>
 <h1>
     <?php echo $temp; ?>°
@@ -131,7 +158,7 @@ $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 
     </div>
     <div class="scrolling-wrapper">
-        <div class="card"><h2>Icon</h2></div>
+        <div class="card"><p><?php echo getSuomismall($saatieto); ?><br><?php echo $temp; ?>°</p></div>
         <div class="card"><h2>Icon</h2></div>
         <div class="card"><h2>Icon</h2></div>
         <div class="card"><h2>Icon</h2></div>

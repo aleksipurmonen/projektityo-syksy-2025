@@ -19,7 +19,6 @@ h3 {
 p {
     font-size: 16px;
     color: #333;
-    text-align: left;
 }
 h1{
     font-size: 32px;
@@ -246,7 +245,12 @@ form {
     width: auto;
     height: auto;
 }
-
+.weather-icon3{
+    max-width: 50px;
+    max-height: 38px;
+    width: auto;
+    height: auto;
+}
 
 .scrolling-wrapper {
     overflow-x: scroll;
