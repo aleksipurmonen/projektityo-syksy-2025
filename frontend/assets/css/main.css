@@ -287,6 +287,8 @@ form {
     overflow-x: scroll;
     white-space: nowrap;
 
+    scrollbar-color: #8e8e8e#00000000;
+    scrollbar-width: 90%;
 }
 .card {
     display: inline-block;
@@ -299,8 +301,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
-
-
 
 @media (max-width: 768px) {
     .container2 {
