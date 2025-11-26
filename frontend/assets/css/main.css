@@ -301,11 +301,11 @@ form {
         max-height: 60px;
     }
     .scrolling-wrapper{
-        width: calc(75% + 40px);
+        width: calc(115% + 40px);
         justify-self: center;
     }
     .card{
-        max-width: 50px;
+        max-width: 65px;
         margin-inline: 5px;
     }
         p{

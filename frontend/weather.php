@@ -88,6 +88,7 @@ return $kuvalinkki
     
         
     <div id="clock" aria-live="polite"></div> 
+    <br>
 <script>
   function updateClock() {
     const now = new Date();
@@ -163,13 +164,15 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
 
 
     </div>
+    <br>
     <div class="scrolling-wrapper">
-        <div class="card"><p><?php echo getSuomismall($saatieto); ?><br><?php echo $temp; ?>°</p></div>
-        <div class="card"><h2>Icon</h2></div>
-        <div class="card"><h2>Icon</h2></div>
-        <div class="card"><h2>Icon</h2></div>
-        <div class="card"><h2>Icon</h2></div>
-        <div class="card"><h2>Icon</h2></div>
+        <?php
+        for ($i=1; $i < 6; $i++) {
+            $kuva = getSuomismall($aikasarja[$i]['data']['next_1_hours']['summary']['symbol_code']);
+            $temp = $aikasarja[$i]['data']['instant']['details']['air_temperature'];
+            echo '<div class="card"><p>'. $kuva .'<br>'. $temp .'</p></div>';
+        }
+        ?>
     </div>
 </body>
 </html>
