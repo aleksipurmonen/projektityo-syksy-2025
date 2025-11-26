@@ -7,7 +7,7 @@ body {
     font-family: 'Verdana';;
     background-color: #f8f9fa;
     background-image: 
-  linear-gradient(rgba(20, 30, 40, 0.26), rgba(20, 30, 40, 0.85)),
+  linear-gradient( rgba(170, 170, 170, 0.658), rgba(8, 8, 8, 0.527)),
     url('https://cdn.pixabay.com/photo/2021/01/22/17/53/house-5940719_1280.jpg');
   background-size: cover;
   background-position: center;
