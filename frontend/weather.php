@@ -11,13 +11,13 @@ $options = [
     ]
     ];
 $context = stream_context_create($options);
-$response = file_get_contents($url, false, $context);
+$response = file_get_contents($url, false, $context); //Säädatan haku met.no API:sta
 if($response===FALSE)  {
-    die("Säädatan haku epäonnistui.");
+    die("Säädatan haku epäonnistui."); //Virhe ilmoitus jos säädätan haku epäonnistuu
 }
 $data = json_decode($response, true);
 $aikasarja = array_slice($data['properties']['timeseries'], 0, 6);
-function getSuomi($koodi) {
+function getSuomi($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
     $taulukko = [
         'clearsky_day' => [ 'assets/icons/Aurinko.png'],
         'clearsky_night' => ['assets/icons/Selkeää yö.png'],
@@ -35,13 +35,13 @@ function getSuomi($koodi) {
     ];
 
     if (isset($taulukko[$koodi])) {
-        [$kuvalinkki] = $taulukko[$koodi];
+        [$kuvalinkki] = $taulukko[$koodi]; // Purkaa taulukon saadakseen kuvalinkin
 return $kuvalinkki
-    ? ' <img src="' . $kuvalinkki . '" alt="" class="weather-icon2">'
+    ? ' <img src="' . $kuvalinkki . '" alt="" class="weather-icon2">' // Palauttaa kuvalinkin HTML-kuvana
     : $kuvalinkki;
     }
 
-    return $koodi;
+    return $koodi; 
 }
     require_once("includes/htmlhead.php"); //sisältää footer, header, css, bootstrap
     ?>
