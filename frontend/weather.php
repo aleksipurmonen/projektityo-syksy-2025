@@ -43,6 +43,34 @@ return $kuvalinkki
 
     return $koodi; 
 }
+$data = json_decode($response, true);
+$aikasarja = array_slice($data['properties']['timeseries'], 0, 6);
+function getSuomimedium($koodi) {
+    $taulukko = [
+        'clearsky_day' => ['Selkeää', null],
+        'clearsky_night' => ['Selkeää yöllä', null],
+        'partlycloudy_day' => ['Puolipilvistä', null],
+        'partlycloudy_night' => ['Puolipilvistä yöllä', null],
+        'cloudy' => ['Pilvistä', null],
+        'rain' => ['Sade', null],
+        'lightrain' => ['Heikkoa sadetta', null],
+        'heavyrain' => ['Voimakasta sadetta', null],
+        'snow' => ['Lunta', null],
+        'lightsnow' => ['Heikkoa lunta', null],
+        'heavysnow' => ['Voimakasta lunta', null],
+        'fog' => ['Sumua', null],
+        'fair_day' => ['Selkeää päivällä', null]
+    ];
+
+    if (isset($taulukko[$koodi])) {
+        [$teksti, $kuvalinkki] = $taulukko[$koodi];
+        return $kuvalinkki
+            ? $teksti . ' <img src="' . $kuvalinkki . '" alt="' . $teksti . '" style="width:40px; vertical-align:middle;">'
+            : $teksti;
+    }
+
+    return $koodi;
+}
 function getSuomismall($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
     $taulukko = [
         'clearsky_day' => [ 'assets/icons/Aurinko.png'],
@@ -147,6 +175,9 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
 <!-- Näytä sääinfo -->
 <h1>
     <?php echo getSuomibig($saatieto); ?>
+</h1>
+<h1>
+    <?php echo getSuomimedium($saatieto); ?>
 </h1>
 <h1>
     <?php echo $temp; ?>°
