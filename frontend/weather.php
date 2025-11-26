@@ -182,7 +182,7 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
         }
         ?>
     </div>
-    </div>
+    <!-- </div> -->
 </body>
 </html>
 
