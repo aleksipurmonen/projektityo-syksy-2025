@@ -168,9 +168,14 @@ $visibility = $piste['data']['instant']['details']['visibility'] ?? null;       
     <div class="scrolling-wrapper">
         <?php
         for ($i=1; $i < 6; $i++) {
-            $kuva = getSuomismall($aikasarja[$i]['data']['next_1_hours']['summary']['symbol_code']);
+            $img = getSuomismall($aikasarja[$i]['data']['next_1_hours']['summary']['symbol_code']);
             $temp = $aikasarja[$i]['data']['instant']['details']['air_temperature'];
-            echo '<div class="card"><p>'. $kuva .'<br>'. $temp . '°' .'</p></div>';
+            
+            $time = new DateTime($aikasarja[$i]['time'], new DateTimeZone('UTC'));
+            $time->setTimezone(new DateTimeZone('Europe/Helsinki'));
+            $time = $time->format('H:i'); 
+
+            echo '<div class="card"><p>'. $time . '<br>' . $img .'<br>'. $temp . '°' .'</p></div>';
         }
         ?>
     </div>
