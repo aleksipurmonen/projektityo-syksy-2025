@@ -255,15 +255,18 @@ form {
     width: auto;
     height: auto;
 }
-.container3{
+/* .container3{
     background-color: #131618;
-    border-radius: 10px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     padding-block: 0;
-}
+} */
 .scrolling-wrapper {
+    background-color: #131618;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     overflow-x: scroll;
     white-space: nowrap;
 
@@ -311,7 +314,7 @@ form {
         max-height: 60px;
     }
     .scrolling-wrapper{
-        width: calc(115% + 40px);
+        width: 115%;
         justify-self: center;
     }
     .card{
