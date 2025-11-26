@@ -179,7 +179,10 @@ form {
 
 /*----------SÄÄSEURANTA----------*/
 .container2 {
-    background: rgb(82 147 243 / 64%);;
+        background: linear-gradient(to bottom right,
+        rgba(50, 111, 245, 0.6), 
+        rgba(154, 177, 187, 0.6) 
+        );
     padding: 50px;
     border-radius: 10px;
     max-width: 50%;
