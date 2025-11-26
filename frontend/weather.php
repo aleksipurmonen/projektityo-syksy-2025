@@ -44,7 +44,7 @@ return $kuvalinkki
     return $koodi; 
 }
 $data = json_decode($response, true);
-$aikasarja = array_slice($data['properties']['timeseries'], 0, 6);
+$aikasarja = array_slice($data['properties']['timeseries'], 0, 12);
 function getSuomimedium($koodi) {
     $taulukko = [
         'clearsky_day' => ['Selkeää', null],
