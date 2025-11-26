@@ -192,7 +192,7 @@ form {
     margin: 50px auto  ;
 }
 .weather {
-    background: linear-gradient(to left, #f7cac9, #92a8d1);
+    background: linear-gradient(to bottom right, #f7cac9, #92a8d1);
     padding: 20px;
     border-radius: 10px;
     max-width: none;
@@ -263,7 +263,7 @@ form {
     padding-block: 0;
 } */
 .scrolling-wrapper {
-    background-color: #131618;
+    background: linear-gradient(to bottom right, #f7cac9, #92a8d1);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
@@ -281,6 +281,9 @@ form {
     height: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+}
+h2{
+    text-align: left;
 }
 
 
@@ -316,6 +319,7 @@ form {
     .scrolling-wrapper{
         width: 115%;
         justify-self: center;
+        overflow-x: scroll;
     }
     .card{
         max-width: 65px;
