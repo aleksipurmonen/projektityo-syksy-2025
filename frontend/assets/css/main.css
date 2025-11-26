@@ -210,6 +210,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -278,16 +279,17 @@ form {
     .rivitin {
         flex-wrap: nowrap;
         justify-content: center; 
-        width: calc(75% + 40px);
+        width: calc(115% + 40px);
         justify-self: center;
     }
     .weather-info1,.weather-info2,.weather-info3 {
         max-width: 100%;
         gap: 5px;
+        padding-inline: 0;
     }
     .weather{
         justify-self: center;
-        width: 75%;
+        width: 115%;
         min-width: 150px;
     }
     .weather-icon{
@@ -305,6 +307,9 @@ form {
     .card{
         max-width: 50px;
         margin-inline: 5px;
+    }
+        p{
+        font-size: 14px;
     }
 }
 
