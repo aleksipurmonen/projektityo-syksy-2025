@@ -130,7 +130,14 @@ $saatieto = $piste['data']['next_1_hours']['summary']['symbol_code'] ?? 'N/A';
 
 
     </div>
-
+    <div class="scrolling-wrapper">
+        <div class="card"><h2>Icon</h2></div>
+        <div class="card"><h2>Icon</h2></div>
+        <div class="card"><h2>Icon</h2></div>
+        <div class="card"><h2>Icon</h2></div>
+        <div class="card"><h2>Icon</h2></div>
+        <div class="card"><h2>Icon</h2></div>
+    </div>
 </body>
 </html>
 
