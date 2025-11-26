@@ -184,7 +184,7 @@ form {
         rgba(154, 177, 187, 0.6) 
         );
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 50%;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
@@ -192,9 +192,13 @@ form {
     margin: 50px auto  ;
 }
 .weather {
-    background: linear-gradient(to bottom right, #f7cac9, #92a8d1);
+    background: linear-gradient(
+        to bottom right,
+        #D6E4F7,
+        #E7D6F6
+    );
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
     max-width: none;
     height:20vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
@@ -207,7 +211,7 @@ form {
 
 .weather-info1,.weather-info2,.weather-info3{
     flex: 1;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 20px;
     max-width: 22%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
@@ -219,16 +223,25 @@ form {
 }
 
 .weather-info1 {
-    background: linear-gradient(to left, #b7c8df, #578fd8);
+    background: linear-gradient(to left,
+        #3293FF,
+        #1563F5
+    );
 
 }
 .weather-info2 {
-    background: linear-gradient(to left, #dffff4, #81ebc6);
+      background: linear-gradient(to left,
+        #14D4C8,
+        #09A89F
+    );
+
 
 }
 .weather-info3 {
-    background: linear-gradient(to left, #e6e6e6, #7e7d7d);
-
+    background: linear-gradient(to left,
+        #E3E3E3,
+        #C4C5C7
+    );
 }
 
 .rivitin{
@@ -263,8 +276,12 @@ form {
     padding-block: 0;
 } */
 .scrolling-wrapper {
-    background: linear-gradient(to bottom right, #f7cac9, #92a8d1);
-    border-radius: 10px;
+    background: linear-gradient(
+        to bottom right,
+        #D6E4F7,
+        #E7D6F6
+    );
+    border-radius: 25px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     overflow-x: scroll;
@@ -282,9 +299,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
-h2{
-    text-align: left;
-}
+
 
 
 @media (max-width: 768px) {
