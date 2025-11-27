@@ -27,9 +27,9 @@ if ($result) {
      ?>
 </head>
 <body>
-<div class="">
+<div class="admin-container">
     <h2 >Käyttäjähallinta</h2>
-    <table class="">
+    <table class="table">
         <head class="">
             <tr>
                 <th>Nimi</th>
