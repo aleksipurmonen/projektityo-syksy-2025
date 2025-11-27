@@ -58,6 +58,7 @@ ALTER TABLE `users`
 COMMIT;
 
 INSERT INTO `users`( `name`, `email`, `passwordhash`, `role`) VALUES ( 'Topi Topi', 'topi@gmail.com', '$2y$10$tL6xJZphXPrTuZQgR4P5e.L.WX3hWW.2Q5hefbvAl8MhtKJpg63JW', 'user') 
+INSERT INTO `users`( `name`, `email`, `passwordhash`, `role`) VALUES ( 'Admin', 'admin@gmail.com', '$2y$10$ehDKc6h6WDD.140sSTS8yuMeA5YQ.ki4Za2ok7.u76d2Kapa4tdbe', 'admin') ;
 --Testi dataa, salasana on 1234
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
