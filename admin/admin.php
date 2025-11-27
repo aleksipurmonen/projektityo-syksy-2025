@@ -1,7 +1,4 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
 
 require_once '../backend/db.php';
 //etsitään kaikki käyttäjät tietokannasta
@@ -13,6 +10,7 @@ if ($result) {
         $users[] = $row;
     }
 }
+     
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +22,10 @@ if ($result) {
     <link rel="stylesheet" href="../frontend/assets/css/main.css">
     <?php 
     require_once("../frontend/includes/footer.php");
+     ?>
+
+     <?php 
+require_once("../frontend/includes/htmlhead.php");
      ?>
 </head>
 <body>
@@ -55,6 +57,12 @@ if ($result) {
                 </td>
             </tr>
             <?php endforeach; ?>
+            <?php
+if(!isset($_SESSION["userid"])){
+    header("Location: ../frontend/logout.php");
+    exit;
+}
+?>
         </body>
     </table>
 </div>
