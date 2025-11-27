@@ -180,10 +180,10 @@ form {
 
 /*----------SÄÄSEURANTA----------*/
 .container2 {
-        background: linear-gradient(to bottom right,
-        rgba(50, 111, 245, 0.6), 
-        rgba(154, 177, 187, 0.6) 
-        );
+    background: linear-gradient(to bottom right,
+    rgba(50, 111, 245, 0.6), 
+    rgba(154, 177, 187, 0.6) 
+    );
     padding: 50px;
     border-radius: 20px;
     max-width: 700px;
@@ -197,23 +197,23 @@ form {
         to bottom right,
         #D6E4F7,
         #E7D6F6
-    );
-    padding: 20px;
-    border-radius: 25px;
-    max-width: none;
-    height:20vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
+        );
+        padding: 20px;
+        border-radius: 25px;
+        max-width: none;
+        height:20vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 
-.weather-info1,.weather-info2,.weather-info3{
-    flex: 1;
-    border-radius: 25px;
-    padding: 20px;
+    .weather-info1,.weather-info2,.weather-info3{
+        flex: 1;
+        border-radius: 25px;
+        padding: 20px;
     max-width: 22%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
     height: 10vh;
@@ -225,23 +225,23 @@ form {
 
 .weather-info1 {
     background: linear-gradient(to left,
-        #3293FF,
-        #1563F5
+    #3293FF,
+    #1563F5
     );
-
+    
 }
 .weather-info2 {
-      background: linear-gradient(to left,
-        #14D4C8,
-        #09A89F
+    background: linear-gradient(to left,
+    #14D4C8,
+    #09A89F
     );
-
-
+    
+    
 }
 .weather-info3 {
     background: linear-gradient(to left,
-        #E3E3E3,
-        #C4C5C7
+    #E3E3E3,
+    #C4C5C7
     );
 }
 
@@ -281,31 +281,46 @@ form {
         to bottom right,
         #D6E4F7,
         #E7D6F6
-    );
-    border-radius: 25px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
-    overflow-x: scroll;
-    white-space: nowrap;
+        );
+        border-radius: 25px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.822);
+        overflow-x: scroll;
+        white-space: nowrap;
+        
+        scrollbar-color: #8e8e8e#00000000;
+        scrollbar-width: 90%;
+    }
+    .card {
+        display: inline-block;
+        background: #ffffff;
+        border-radius: 15px;
+        max-width: auto;
+        max-height: auto;
+        width: 75px;
+        height: 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+    }
 
-    scrollbar-color: #8e8e8e#00000000;
-    scrollbar-width: 90%;
-}
-.card {
-    display: inline-block;
-    background: #ffffff;
-    border-radius: 15px;
-    max-width: auto;
-    max-height: auto;
-    width: 75px;
-    height: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    
+    
+    
+    
+/*----------ADMIN----------*/
+.admin-container{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .container2 {
-        padding: 50px;
+
+
+
+
+    @media (max-width: 768px) {
+        .container2 {
+            padding: 50px;
         margin: 20px;
     }
     .rivitin {

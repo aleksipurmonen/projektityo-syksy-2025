@@ -4,6 +4,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../frontend/assets/css/main.css">
     <?php 
+    
     require_once("../frontend/includes/header.php");
     require_once("../frontend/includes/footer.php");
+    if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
      ?>
