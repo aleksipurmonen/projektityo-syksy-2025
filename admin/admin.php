@@ -21,10 +21,11 @@ if ($result) {
     <title>Käyttäjähallinta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../frontend/assets/css/main.css">
 </head>
-<body class="">
+<body>
 <div class="">
-    <h2 class="">Käyttäjähallinta</h2>
+    <h2 >Käyttäjähallinta</h2>
     <table class="">
         <head class="">
             <tr>
