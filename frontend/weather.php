@@ -31,9 +31,9 @@ function getSuomibig($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
         'lightsnow' => ['assets/icons/pakkanen.png'],
         'heavysnow' => ['assets/icons/lumisade.png'],
         'fog' => ['assets/icons/sumu.png'],
-        'fair_day' => ['assets/icons/Aurinko.png']
-        'sleet' => ['assets/icons/loska.png']
-        'lightsleet' => ['assets/icons/loska.png']
+        'fair_day' => ['assets/icons/Aurinko.png'],
+        'sleet' => ['assets/icons/loska.png'],
+        'lightsleet' => ['assets/icons/loska.png'],
         'heavysleet' => ['assets/icons/loska.png']
     ];
 
@@ -62,9 +62,9 @@ function getSuomimedium($koodi) {
         'lightsnow' => ['Heikkoa lunta', null],
         'heavysnow' => ['Voimakasta lunta', null],
         'fog' => ['Sumua', null],
-        'fair_day' => ['Selkeää päivällä', null]
-        'sleet' => ['Lokasadetta', null]
-        'lightsleet' => ['Kevyttä lokasadetta', null]
+        'fair_day' => ['Selkeää päivällä', null],
+        'sleet' => ['Lokasadetta', null],
+        'lightsleet' => ['Kevyttä lokasadetta', null],
         'heavysleet' => ['Voimakasta lokasadetta', null]
         
     ];
@@ -92,9 +92,9 @@ function getSuomismall($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
         'lightsnow' => ['assets/icons/pakkanen.png'],
         'heavysnow' => ['assets/icons/lumisade.png'],
         'fog' => ['assets/icons/sumu.png'],
-        'fair_day' => ['assets/icons/Aurinko.png']
-        'sleet' => ['assets/icons/loska.png']
-        'lightsleet' => ['assets/icons/loska.png']
+        'fair_day' => ['assets/icons/Aurinko.png'],
+        'sleet' => ['assets/icons/loska.png'],
+        'lightsleet' => ['assets/icons/loska.png'],
         'heavysleet' => ['assets/icons/loska.png']
     ];
 
