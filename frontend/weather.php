@@ -110,7 +110,7 @@ return $kuvalinkki
 
     require_once("includes/htmlhead.php"); //sisältää footer, header, css, bootstrap
     ?>
-    <title>Document</title>
+    <title>Sää</title>
 </head>
 <body> 
 
