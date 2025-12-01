@@ -64,8 +64,8 @@ function getSuomimedium($koodi) {
         'fog' => ['Sumua', null],
         'fair_day' => ['Selkeää päivällä', null],
         'sleet' => ['Lokasadetta', null],
-        'lightsleet' => ['Kevyttä lokasadetta', null],
-        'heavysleet' => ['Voimakasta lokasadetta', null]
+        'lightsleet' => ['Kevyttä räntäsadetta', null],
+        'heavysleet' => ['Voimakasta räntäsadetta', null]
         
     ];
 
