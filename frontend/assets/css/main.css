@@ -312,6 +312,8 @@ form {
     background-color: #fff;
     padding: 50px;
     border-radius: 10px;
+    overflow-x: auto;
+    scrollbar-color: #8e8e8e #00000000;
 }
 .table {
   width: 100%;
