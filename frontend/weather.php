@@ -32,6 +32,9 @@ function getSuomibig($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
         'heavysnow' => ['assets/icons/lumisade.png'],
         'fog' => ['assets/icons/sumu.png'],
         'fair_day' => ['assets/icons/Aurinko.png']
+        'sleet' => ['assets/icons/loska.png']
+        'lightsleet' => ['assets/icons/loska.png']
+        'heavysleet' => ['assets/icons/loska.png']
     ];
 
     if (isset($taulukko[$koodi])) {
@@ -60,6 +63,10 @@ function getSuomimedium($koodi) {
         'heavysnow' => ['Voimakasta lunta', null],
         'fog' => ['Sumua', null],
         'fair_day' => ['Selkeää päivällä', null]
+        'sleet' => ['Lokasadetta', null]
+        'lightsleet' => ['Kevyttä lokasadetta', null]
+        'heavysleet' => ['Voimakasta lokasadetta', null]
+        
     ];
 
     if (isset($taulukko[$koodi])) {
@@ -86,6 +93,9 @@ function getSuomismall($koodi) { //Sääkoodien muunnos suomeksi ja kuvakkeet
         'heavysnow' => ['assets/icons/lumisade.png'],
         'fog' => ['assets/icons/sumu.png'],
         'fair_day' => ['assets/icons/Aurinko.png']
+        'sleet' => ['assets/icons/loska.png']
+        'lightsleet' => ['assets/icons/loska.png']
+        'heavysleet' => ['assets/icons/loska.png']
     ];
 
     if (isset($taulukko[$koodi])) {
