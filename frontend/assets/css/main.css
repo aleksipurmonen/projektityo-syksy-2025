@@ -313,7 +313,12 @@ form {
     padding: 50px;
     border-radius: 10px;
 }
-
+.table td, .table th {
+  vertical-align: middle;
+}
+span.badge {
+    width: 70px;
+}
 
 
 
