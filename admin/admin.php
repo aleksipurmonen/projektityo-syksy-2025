@@ -33,7 +33,7 @@ require_once("../frontend/includes/htmlhead.php");
 <div class="admin-container">
     <h2 >Käyttäjähallinta</h2>
     <table class="table">
-        <head class="">
+        <head>
             <tr>
                 <th>Nimi</th>
                 <th>Sähköposti</th>
