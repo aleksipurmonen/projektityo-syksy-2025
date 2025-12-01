@@ -313,6 +313,9 @@ form {
     padding: 50px;
     border-radius: 10px;
 }
+.table {
+  width: 100%;
+}
 .table td, .table th {
   vertical-align: middle;
 }
@@ -329,7 +332,7 @@ span.badge {
 
     @media (max-width: 768px) {
         .container2 {
-            padding: 50px;
+        padding: 50px;
         margin: 20px;
     }
     .rivitin {
@@ -349,8 +352,8 @@ span.badge {
         min-width: 150px;
     }
     .weather-icon{
-    max-width: 40px;
-    max-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
     }
     .weather-icon2{
         max-width: 80px;
@@ -368,8 +371,11 @@ span.badge {
         p{
         font-size: 14px;
     }
+    .admin-container {
+        padding: 10px;
+        max-width: 80%;
+    }
 }
-
 
 @media(max-width: 450px){
     .header-username{
