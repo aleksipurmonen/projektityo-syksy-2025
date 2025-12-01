@@ -162,7 +162,7 @@ form {
 }
 .logo{
     max-width: 75px;
-    padding-inline: 15px;
+    margin-inline: 15px;
 }
 .header-btn{
     margin-top: 0;
