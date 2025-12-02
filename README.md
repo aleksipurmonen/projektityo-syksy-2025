@@ -31,8 +31,6 @@
 
 5. Luo tietokanta nimeltä weather_app (tai haluamasi nimi).
 
-6. Kopioi .env.example tiedosto ja nimeä se .env:
-Määrittele .env tiedostoon arkaluonteiset asiat kuten tietokantayhteys asetukset sekä API -avaimet
 
 ---
 Tekijät
